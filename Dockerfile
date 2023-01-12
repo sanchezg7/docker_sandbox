@@ -13,6 +13,7 @@ COPY . /app
 RUN npm install
 
 # indicate what port needs to be available for the image to access
+# optional to declare but recommended for documentation 
 EXPOSE 80
 
 # on image instantiation, run this command

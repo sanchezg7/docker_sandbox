@@ -19,3 +19,6 @@ Create an image, given the directory to look for the Dockerfile
  => => exporting layers                                                                        0.1s
  => => writing image sha256:f15914fc60fef111c792bdec41e835973c5da3350ed946574d0bf35c07cc2df9   0.0s
 ```
+
+# Run to publish a port
+`docker run -p 3000:80 12345`
