@@ -38,3 +38,4 @@ docker stop <container id>
 
 # Prune images
 docker image prune -a
+
