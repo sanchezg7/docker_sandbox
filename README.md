@@ -29,3 +29,12 @@ It will retain the bound port.
 
 # Attaching to an already-running Container
 docker attach <containerid>
+
+# Remove created containers
+docker rm
+
+# Stop a container
+docker stop <container id>
+
+# Prune images
+docker image prune -a
