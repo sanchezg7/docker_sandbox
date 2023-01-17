@@ -36,6 +36,13 @@ docker rm
 # Stop a container
 docker stop <container id>
 
-# Prune images
+# Image
+## List images
+docker images
+
+## Remove Image
+docker rmi <image id>
+
+## Prune images
 docker image prune -a
 
