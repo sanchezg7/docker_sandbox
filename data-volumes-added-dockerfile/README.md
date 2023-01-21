@@ -26,3 +26,6 @@ DRIVER    VOLUME NAME
 local     39865c72f963df847606501e52d3181b3242ad225cb5cbee30cab97c5257899c
 local     feedback
 ```
+
+## Remove zombie anon volumes
+docker volume prune
