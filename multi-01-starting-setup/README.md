@@ -20,3 +20,17 @@ docker stop 782
 
 ## run and publish the correct port 
 docker run --name goals-backend --rm -d -p 80:80 goals-node
+
+## React frontend
+docker build -t goals-react .
+docker run --name goals-react --rm -d -p 3000:3000 goals-react
+
+# Networking
+Creating a docker network to formally put all the respective containers in to communicate.
+`docker network create goals-net`
+hash is provided
+
+## Run a container in the respective network
+`docker run --name mongodb --rm -d --network goals-net mongo`
+Backend
+`docker run --name goals-backend --rm -d --network goals-net goals-node`
